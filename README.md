@@ -34,7 +34,8 @@ dotnet build
 1. Within the root directory of each microservice, launch the back end by running:
 dotnet run
 
-*Note:* If you have Visual Studio , Open solution with your IDE after cloning. To run multiple application, follow the below steps:
+### For Visual Studio 2019 or later
+Open solution with your IDE after cloning. To run multiple application, follow the below steps:
 1. *Right-click* on the solution folder *RabbitMqFanoutMessage* and select the *Properties* option.
 2. Click *Startup Project* under the *Common Properties".
 3. Select *Multiple startup projects*.
@@ -42,18 +43,22 @@ dotnet run
 5. Then press the *Apply* and *Ok*.
 6. Ready to run the application.
 
-##Technologies
-.NET Core 5.0
-ASP.NET Core 5.0
-Entity Framework Core 5.0
-AutoMapper 8.1
+
+## Technologies
+* .NET Core 5.0
+* ASP.NET Core 5.0
+* Microsoft.EntityFrameworkCore 5.0
+* MassTransit 7.2
+* MassTransit.AspNetCore 7.2
+* MassTransit.RabbitMQ 7.2
+* AutoMapper 8.1
 
 ## Architecture
-Microservice Architecture
-Full architecture with responsibility separation of concerns
-SOLID and Clean Code
-Unit of Work
-Repository and Generic Repository
+* Microservice Architecture
+* Full architecture with responsibility separation of concerns
+* SOLID and Clean Code
+* Unit of Work
+* Repository and Generic Repository
 
 ## Disclaimer
 This repository is not intended to be a definitive solution. Beware to use in production way.
