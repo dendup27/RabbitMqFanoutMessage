@@ -1,2 +1,4 @@
-.vs/
-FanoutMessageConsumer1/bin/
+.*
+!.gitignore
+*.log
+/bin/
