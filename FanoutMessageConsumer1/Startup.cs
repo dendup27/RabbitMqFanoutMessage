@@ -41,7 +41,7 @@ namespace FanoutMessageConsumer1
             services.AddMassTransit(config =>
             {
                 config.AddConsumer<ProducerConsumer1>();
-                config.SetKebabCaseEndpointNameFormatter();
+                config.SetSnakeCaseEndpointNameFormatter();
                 config.UsingRabbitMq((context, configurator) =>
                 {
                     configurator.Host(Configuration["RabbitMQSettings:HostAddress"]);

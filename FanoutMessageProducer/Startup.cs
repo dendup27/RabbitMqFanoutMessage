@@ -39,6 +39,7 @@ namespace FanoutMessageProducer
             // Mass Transit and Rabbit MQ
             services.AddMassTransit(config =>
             {
+                config.SetSnakeCaseEndpointNameFormatter();
                 config.UsingRabbitMq((context, config) =>
                 {
                     config.Host(Configuration["RabbitMQSettings:HostAddress"]);
